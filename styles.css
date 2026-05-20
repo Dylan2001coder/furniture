@@ -868,20 +868,21 @@ main {
   .site-nav {
     display: flex;
     flex-direction: column;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
     justify-content: center;
     gap: 14px;
-    transform: translateY(-10px);
+    transform: none;
+    margin-top: 18px;
   }
   .menu-toggle {
-    display: inline-flex;
+    display: none;
   }
   .site-nav.active {
-    max-height: 420px;
+    max-height: none;
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
     margin-top: 18px;
   }
   .nav-link {
